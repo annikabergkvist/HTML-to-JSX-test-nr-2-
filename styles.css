@@ -1,9 +1,11 @@
+/* Reset: Remove default browser spacing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Page Layout: Center content on a soft background */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background-color: #f7f7f4;
@@ -14,6 +16,7 @@ body {
     padding: 20px;
 }
 
+/* Cards Row: Keep pricing cards side by side */
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,7 @@ body {
     align-items: flex-start;
 }
 
+/* Card Shell: Base card surface and spacing */
 .card {
     display: flex;
     flex-direction: column;
@@ -34,11 +38,13 @@ body {
     flex-shrink: 0;
 }
 
+/* Card Content Flow: Stack heading, price, and features */
 .card-top {
     display: flex;
     flex-direction: column;
 }
 
+/* Typography: Plan title */
 .card-title {
     font-size: 22px;
     line-height: 28px;
@@ -47,6 +53,7 @@ body {
     margin-bottom: 8px;
 }
 
+/* Typography: Price row */
 .card-price {
     font-size: 20px;
     color: rgba(38, 37, 30, 0.5);
@@ -54,32 +61,38 @@ body {
     align-items: baseline;
 }
 
+/* Typography: Main price amount */
 .card-price-amount {
     font-size: 22px;
     font-weight: 400;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Typography: Price period suffix */
 .card-price-period {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
 
+/* Content Spacing: Gap before CTA button */
 .card-content {
     margin-bottom: 32px;
 }
 
+/* Helper Text: "Includes" line above features */
 .includes-text {
     font-size: 16px;
     color: rgba(38, 37, 30, 0.5);
     margin: 16px 0px;
 }
 
+/* Features List: Remove default bullets */
 .features-list {
     list-style: none;
     padding: 0;
 }
 
+/* Features Item: Align checkmark with text */
 .features-list li {
     display: flex;
     align-items: center;
@@ -88,6 +101,7 @@ body {
     color: #26251e;
 }
 
+/* Icon: Checkmark styling */
 .checkmark {
     color: #26251e;
     font-size: 14px;
@@ -95,6 +109,7 @@ body {
     font-weight: 400;
 }
 
+/* Button Base: Shared CTA style */
 .download-button {
     margin-top: auto;
     width: fit-content;
@@ -109,27 +124,33 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Button State: Default hover */
 .download-button:hover {
     background-color: #D8D6CE;
 }
 
+/* Button State: Default pressed */
 .download-button:active {
     background-color: #D8D6CE;
 }
 
+/* Button Variant: Primary CTA (Pro plan) */
 .download-button.primary {
     background-color: #111;
     color: #fff;
 }
 
+/* Button State: Primary hover */
 .download-button.primary:hover {
     background-color: #333;
 }
 
+/* Button State: Primary pressed */
 .download-button.primary:active {
     background-color: #333;
 }
 
+/* Top Label: Floating note at top center */
 .page-label {
     position: fixed;
     top: 16px;
@@ -143,6 +164,7 @@ body {
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
+/* Top Label Emphasis: Slightly darker bold text */
 .page-label strong {
     color: #333;
 }
